@@ -70,6 +70,6 @@ jobs:
     - uses: actions/checkout@v2
     - uses: akhileshns/heroku-deploy@v3.0.4 # This is the action
       with:
-        heroku_api_key: ${{secrets.93c0e2f2-cceb-4188-b5c0-617b1175df91}}
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
         heroku_app_name: "diegopackage" # Must be unique in Heroku
-        heroku_email: ${{secrets.diego.torpoco@gmail.com}}
+        heroku_email: ${{secrets.HEROKU_EMAIL}}
